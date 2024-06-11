@@ -35,7 +35,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 4.5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 header {
     grid-column: 2 / 4;
@@ -69,6 +69,11 @@ footer {
 /* styling */
 :root {
     --accent-color: #4c1d95;
+    --icons-size: max(1.7vw, 1.7rem);
+}
+button {
+    background-color: #00000000;
+    border: 0;
 }
 
 button:hover {
@@ -77,7 +82,7 @@ button:hover {
 
 /* aside tab bar */
 aside {
-    padding: 1vh 0 1vh 3vw;
+    padding: 1vh 0 1vh 2vw;
     color: #fff;
     background-color: var(--accent-color);
 }
@@ -93,14 +98,14 @@ aside img {
     font-size: max(1.8vw, 1.5rem);
 }
 .heading img {
-    width: max(2.1vw, 2rem);
+    width: max(2.2vw, 2.5rem);
 }
 
 aside ul {
     list-style: none;
 }
 li img {
-    width: max(2vw, 2rem);
+    width: var(--icons-size);
 }
 
 .list1, .list2 {
@@ -117,13 +122,91 @@ li img {
     gap: 1rem;
 
     font-weight: 550;
+    font-size: max(1vw, 1rem);
 }
 .list1 li button, .list2 li button {
-    background-color: #ffffff00;
-    border: 0;
     color: #fff;
 }
     
 
+/*header*/
+header {
+    box-shadow: #535353ab 0 0 1.2vh;
 
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 2fr;
 
+    padding: 1vh 5vw 0 3vw;
+    
+}
+header img {
+    width: var(--icons-size);
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+header .search button {
+    position: relative;
+    top: 4px;
+}
+header .search input {
+    border: 0;
+    background-color: #e2e9f1;
+    border-radius: 15px;
+
+    width: 100%;
+    height: max(2vw, 1.8rem);
+}
+
+header .profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2vw;
+}
+header .profile .profile-pic {
+    width: max(7%, 2rem);
+    border-radius: 50%;
+}
+header .profile span {
+    font-weight: 650;
+    font-size: max(1.3vw, 1rem);
+}
+
+header .greeting {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+header .greeting .profile-pic-bigger {
+    width: max(10%, 3rem);
+    border-radius: 50%;
+}
+header .greeting p {
+    font-weight: 650;
+}
+header .greeting p:nth-child(1) {
+    font-size: max(1.2vw, 1rem);
+}
+header .greeting p:nth-child(2) {
+    font-size: max(1.9vw, 1.5rem);
+}
+
+.header-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw;
+}
+.header-btns button {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 550;
+    width: 8vw;
+    height: 4vh;
+}
