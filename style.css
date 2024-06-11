@@ -131,7 +131,7 @@ li img {
 
 /*header*/
 header {
-    box-shadow: #535353ab 0 0 1.2vh;
+    box-shadow: 5vh 5vh 5vh 5vh #535353ab;
 
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -207,6 +207,7 @@ header .greeting p:nth-child(2) {
     border-radius: 20px;
     color: #fff;
     font-weight: 550;
+    font-size: max(1vw, 1rem);
     width: 8vw;
     height: 4vh;
 }
@@ -251,4 +252,23 @@ main {
 
 .card {
     border-left: 10px solid #2563eb;
+    box-shadow: 0.3vh 0.3vh 0.7vh #535353ab;
+}
+
+/* announcements */
+.announcements {
+    padding: 2vh 2vh 2vh 0;
+}
+
+.announcements section {
+    background-color: #fff;
+    padding: 1.5vh 1vw 1.5vh 1vw;
+}
+.announcements > section {
+    border-radius: 10px;
+    box-shadow: 0.3vh 0.3vh 0.7vh #535353ab;
+}
+
+.announcements section section:nth-child(2), .announcements section section:nth-child(3) {
+    border-top: 1px solid rgba(136, 136, 136, 0.493);   
 }
