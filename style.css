@@ -37,4 +37,38 @@ h6 {
   isolation: isolate;
 }
 
+/*general*/
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+header {
+    grid-column: 2 / 4;
+}
+
+aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+main {
+    display: grid;
+    
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+main .projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: -1;
+
+    text-align: center;
+    align-self: center;
+}
 
