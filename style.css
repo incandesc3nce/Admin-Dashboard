@@ -304,3 +304,13 @@ main {
     width: 17%;
     border-radius: 50%;
 }
+
+
+/* footer */
+footer {
+    background-color: #c35dff;
+    color: #fff;
+}
+footer a {
+    color: #6df4fd;
+}
