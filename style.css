@@ -70,6 +70,7 @@ footer {
 :root {
     --accent-color: #4c1d95;
     --icons-size: max(1.7vw, 1.7rem);
+    --shadow: 0.3vh 0.3vh 0.7vh #535353ab;
 }
 button {
     background-color: #00000000;
@@ -252,7 +253,7 @@ main {
 
 .card {
     border-left: 10px solid #2563eb;
-    box-shadow: 0.3vh 0.3vh 0.7vh #535353ab;
+    box-shadow: var(--shadow);
 }
 
 /* announcements */
@@ -266,9 +267,40 @@ main {
 }
 .announcements > section {
     border-radius: 10px;
-    box-shadow: 0.3vh 0.3vh 0.7vh #535353ab;
+    box-shadow: var(--shadow);
 }
 
 .announcements section section:nth-child(2), .announcements section section:nth-child(3) {
     border-top: 1px solid rgba(136, 136, 136, 0.493);   
+}
+.trending {
+    padding: 2vh 2vh 2vh 0;
+}
+
+/* trending */
+.trending section {
+    background-color: #fff;
+    padding: 1.5vh 1vw 1.5vh 1vw;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.trending > section > div {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.trending p:first-child {
+    font-weight: 600;
+}
+.trending img {
+    width: 17%;
+    border-radius: 50%;
 }
